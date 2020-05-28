@@ -22,6 +22,7 @@ html {
   margin: 3.5rem;
   box-shadow: 1rem 1rem 3rem #777;
   overflow: hidden;
+  background-color: var(--secondary-color);
 }
 .header-container {
   display: flex;
@@ -153,3 +154,117 @@ html {
     transform: translateZ(-10rem);
   }
 }
+
+/* popular tours */
+#tours {
+  padding: 4rem;
+}
+.tours-header {
+  text-align: center;
+  font-size: 5rem;
+  color: var(--primaty-color);
+}
+.tours-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tours-item {
+  width: 30rem;
+  border-radius: 0.3rem;
+  position: relative;
+  /* opacity: 0.9; */
+  perspective: 150rem;
+}
+.front-card {
+  background-color: var(--white-color);
+  opacity: 0.9;
+  position: relative;
+  /* margin: 5rem auto; */
+  text-align: center;
+  z-index: 10;
+}
+
+.tours-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+.front-card h1 {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 1rem;
+  top: 17rem;
+  color: var(--white-color);
+  text-shadow: 0 0 0.5rem var(--grey-color);
+}
+.front-card a {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  letter-spacing: 0.1rem;
+}
+.tours-info {
+  padding-bottom: 2rem;
+}
+.front-card h3 {
+  font-size: 1.4rem;
+  color: var(--light-grey-color);
+  margin: 2rem 5rem;
+  padding: 2rem 0;
+  border-bottom: 0.15rem solid var(--primaty-color);
+}
+.change .front-card {
+  z-index: -1;
+  transform: translateX(2rem);
+  opacity: 0.5;
+}
+.back-card {
+  top: 0;
+  background-color: var(--primaty-color);
+  height: 65rem;
+  position: absolute;
+  width: 30rem;
+  border-radius: 0.3rem;
+  transform: translateZ(-5rem) translateX(3rem);
+  opacity: 0.5;
+}
+.change .back-card {
+  z-index: 0;
+  transform: translateX(0);
+  opacity: 0.9;
+}
+
+.back {
+  position: absolute;
+  left: 1em;
+  top: 1rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  letter-spacing: 0.1rem;
+}
+.book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
+}
+.book h1 {
+  margin-bottom: 2rem;
+  color: var(--white-color);
+}
+.book a {
+  background-color: var(--white-color);
+  padding: 1rem;
+  border-radius: 3rem;
+  color: var(--primaty-color);
+}
+
+/* end of popular tours */
