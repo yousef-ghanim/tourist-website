@@ -157,114 +157,107 @@ html {
 
 /* popular tours */
 #tours {
-  padding: 4rem;
+  padding: 5rem;
 }
 .tours-header {
   text-align: center;
   font-size: 5rem;
+  text-transform: uppercase;
   color: var(--primaty-color);
+  text-shadow: 0.1rem 0.1rem 0.5rem var(--light-grey-color);
 }
 .tours-container {
-  margin: 0 auto;
+  margin: 3rem 0;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+  /* align-items: center; */
 }
 .tours-item {
   width: 30rem;
-  border-radius: 0.3rem;
   position: relative;
-  /* opacity: 0.9; */
   perspective: 150rem;
+  /* opacity: 0.6; */
 }
-.front-card {
-  background-color: var(--white-color);
-  opacity: 0.9;
-  position: relative;
-  /* margin: 5rem auto; */
-  text-align: center;
-  z-index: 10;
-}
-
-.tours-img {
+.front-card img {
   width: 100%;
-  height: 100%;
   border-radius: 0.3rem 0.3rem 0 0;
 }
-.front-card h1 {
-  position: absolute;
-  font-size: 1.5rem;
-  right: 1rem;
-  top: 17rem;
-  color: var(--white-color);
-  text-shadow: 0 0 0.5rem var(--grey-color);
-}
-.front-card a {
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-  background-color: var(--secondary-color);
-  padding: 0.5rem;
+
+.front-card {
+  text-align: center;
+  position: relative;
+  background-color: var(--white-color);
+  z-index: 10;
   border-radius: 0.3rem;
-  letter-spacing: 0.1rem;
-}
-.tours-info {
-  padding-bottom: 2rem;
-}
-.front-card h3 {
-  font-size: 1.4rem;
-  color: var(--light-grey-color);
-  margin: 2rem 5rem;
-  padding: 2rem 0;
-  border-bottom: 0.15rem solid var(--primaty-color);
-}
-.change .front-card {
-  z-index: -1;
-  transform: translateX(2rem);
-  opacity: 0.5;
-}
-.back-card {
-  top: 0;
-  background-color: var(--primaty-color);
-  height: 65rem;
-  position: absolute;
-  width: 30rem;
-  border-radius: 0.3rem;
-  transform: translateZ(-5rem) translateX(3rem);
-  opacity: 0.5;
-}
-.change .back-card {
-  z-index: 0;
-  transform: translateX(0);
   opacity: 0.9;
 }
+.change > .front-card {
+  z-index: 0;
+  transform: translateZ(-10rem) translateX(3rem);
+  opacity: 0.5;
+}
 
-.back {
+.front-card h1 {
   position: absolute;
-  left: 1em;
-  top: 1rem;
-  background-color: var(--secondary-color);
-  padding: 0.5rem;
-  border-radius: 0.3rem;
-  letter-spacing: 0.1rem;
-}
-.book {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  text-align: center;
-}
-.book h1 {
-  margin-bottom: 2rem;
+  right: 1rem;
+  top: 32%;
+  text-transform: uppercase;
   color: var(--white-color);
+  text-shadow: 0.1rem 0.1rem 0.5rem var(--grey-color);
+  font-size: 1.7rem;
 }
-.book a {
-  background-color: var(--white-color);
-  padding: 1rem;
+.front-card ul {
+  margin: 0 auto;
+  width: 60%;
+  padding-bottom: 3rem;
+}
+.front-card ul li {
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: var(--light-grey-color);
+  border-bottom: 0.12rem solid var(--primaty-color);
+}
+.back-card {
+  position: absolute;
+  top: 0;
+  background-color: var(--primaty-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.3rem;
+  transform: translateZ(-10rem) translateX(3rem);
+  opacity: 0.5;
+  box-shadow: 0 0 2rem var(--light-grey-color);
+}
+.change > .back-card {
+  /* z-index: 10; */
+  transform: translateZ(0) translateX(0);
+  opacity: 0.9;
+}
+.back-card h1 {
+  font-size: 4rem;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+}
+.booking {
+  border: none;
+  font-size: 2rem;
+  padding: 1rem 2rem;
   border-radius: 3rem;
   color: var(--primaty-color);
 }
-
+.tours-btn {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  border: none;
+  padding: 0.2rem;
+  opacity: 0.8;
+  border-radius: 0.3rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
 /* end of popular tours */
