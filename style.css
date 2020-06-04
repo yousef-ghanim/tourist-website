@@ -157,26 +157,25 @@ html {
 
 /* popular tours */
 #tours {
-  padding: 5rem;
+  padding: 5rem 0 10rem 0;
 }
 .tours-header {
   text-align: center;
   font-size: 5rem;
+  margin: 5rem 0;
   text-transform: uppercase;
   color: var(--primaty-color);
   text-shadow: 0.1rem 0.1rem 0.5rem var(--light-grey-color);
 }
 .tours-container {
-  margin: 3rem 0;
   display: flex;
   justify-content: space-evenly;
-  /* align-items: center; */
+  padding-bottom: 5rem;
 }
 .tours-item {
   width: 30rem;
   position: relative;
   perspective: 150rem;
-  /* opacity: 0.6; */
 }
 .front-card img {
   width: 100%;
@@ -193,7 +192,7 @@ html {
 }
 .change > .front-card {
   z-index: 0;
-  transform: translateZ(-10rem) translateX(3rem);
+  transform: translateZ(-5rem) translateX(3rem);
   opacity: 0.5;
 }
 
@@ -207,15 +206,16 @@ html {
   font-size: 1.7rem;
 }
 .front-card ul {
-  margin: 0 auto;
+  margin: auto;
   width: 60%;
-  padding-bottom: 3rem;
+  padding: 2rem 0 3rem 0;
 }
 .front-card ul li {
-  padding: 2rem;
+  margin: 2rem 0;
   font-size: 1.5rem;
   color: var(--light-grey-color);
   border-bottom: 0.12rem solid var(--primaty-color);
+  padding-bottom: 1.5rem;
 }
 .back-card {
   position: absolute;
@@ -228,12 +228,11 @@ html {
   align-items: center;
   flex-direction: column;
   border-radius: 0.3rem;
-  transform: translateZ(-10rem) translateX(3rem);
+  transform: translateZ(-5rem) translateX(3rem);
   opacity: 0.5;
   box-shadow: 0 0 2rem var(--light-grey-color);
 }
 .change > .back-card {
-  /* z-index: 10; */
   transform: translateZ(0) translateX(0);
   opacity: 0.9;
 }
@@ -261,3 +260,142 @@ html {
   cursor: pointer;
 }
 /* end of popular tours */
+
+/* story */
+.story {
+  padding: 5rem 0;
+  position: relative;
+}
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.story-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.story-bg {
+  background-color: var(--white-color);
+  padding: 5rem;
+  margin: 5rem;
+  width: 70%;
+  opacity: 0.8;
+  transform: skew(20deg);
+}
+.story-item {
+  display: flex;
+  transform: skew(-20deg);
+}
+.story-item img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5rem;
+}
+.story-text {
+  letter-spacing: 0.1rem;
+}
+.story-text h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--grey-color);
+  margin-bottom: 1rem;
+}
+.story-text p {
+  font-size: 1.5rem;
+  color: var(--grey-color);
+}
+.story-text p::first-letter {
+  margin-left: 1rem;
+}
+/* end of story */
+
+/* contact  */
+#contact {
+  padding: 5rem;
+  text-align: center;
+}
+#contact h1 {
+  font-size: 7rem;
+  margin: 5rem 0;
+  text-transform: uppercase;
+}
+.contact-container {
+  width: 60rem;
+  height: 40rem;
+  margin: auto;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+  border-radius: 0.3rem;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  margin: 1rem 0rem;
+}
+.input-groups {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.input-groups .input-group {
+  width: 48.5%;
+}
+.contact-input {
+  /* height: 6rem; */
+  border-radius: 0.3rem;
+  border: none;
+  background-color: var(--secondary-color);
+  padding: 3rem 0 1rem 0.5rem;
+}
+.contact-input input {
+  position: relative;
+}
+.input-group label {
+  position: absolute;
+  margin: 0.5rem;
+  font-size: 1.3rem;
+}
+.form-textarea {
+  min-height: 8rem;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 3rem 0.5rem;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 15rem;
+}
+.form-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--light-grey-color);
+  border: none;
+  border-radius: 0.3rem;
+  color: var(--white-color);
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.form-btn:hover {
+  background-color: var(--grey-color);
+}
+/* end of contact */
