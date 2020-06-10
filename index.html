@@ -12,6 +12,28 @@
   </head>
   <body>
     <div class="web-container">
+      <!-- navbar -->
+
+      <div class="open-btn nav-btn">
+        <div class="open-bar1 bar"></div>
+        <div class="open-bar2 bar"></div>
+        <div class="open-bar3 bar"></div>
+      </div>
+      <div class="nav-container">
+        <div class="close-btn nav-btn">
+          <div class="close-bar1 bar"></div>
+          <div class="close-bar2 bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li class="blue">home</li>
+          <li class="green">tours</li>
+          <li class="orange">about us</li>
+          <li class="red">offer</li>
+          <li class="light-blue">contact</li>
+        </ul>
+      </div>
+      <!-- end of navbar -->
+      <!-- header -->
       <header class="header-container">
         <div class="header-text">
           <h1>AROUND THE WORLD</h1>
@@ -137,45 +159,60 @@
       </section>
       <!-- end of story -->
       <!-- contact -->
-     <section id="contact">
-       <h1>contact us</h1>
-       <div class="contact-container">
-         <div class="input-group">
-           <label >full name*</label>
-           <input type="text" class="input-contact" placeholder="Enter Your Name">
-         </div>
-         <div class="input-groups">
+      <section id="contact">
+        <h1>contact us</h1>
+        <div class="contact-container">
           <div class="input-group">
-            <label>Email*</label>
-            <input type="email" class="input-contact" placeholder="Enter Your Email">
+            <label>full name*</label>
+            <input
+              type="text"
+              class="input-contact"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="input-groups">
+            <div class="input-group">
+              <label>Email*</label>
+              <input
+                type="email"
+                class="input-contact"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="input-group">
+              <label>Phone</label>
+              <input
+                type="text"
+                class="input-contact"
+                placeholder="Enter Phone Number"
+              />
+            </div>
           </div>
           <div class="input-group">
-            <label>Phone</label>
-            <input type="text" class="input-contact" placeholder="Enter Phone Number">
+            <label>message</label>
+            <textarea
+              class="message"
+              placeholder="Your Message Here..."
+            ></textarea>
           </div>
-         </div>
-        <div class="input-group">
-          <label>message</label>
-          <textarea class="message" placeholder="Your Message Here..." ></textarea>
+          <input type="submit" value="Submit" class="contact-btn" />
         </div>
-        <input type="submit" value="Submit" class="contact-btn">
-       </div>
-     </section>
+      </section>
       <!-- end ofcontact us -->
 
       <!-- footer -->
-<section id="footer">
-  <ul class="footer-link">
-    <li>Home</li>
-    <li>Tours</li>
-    <li>About US</li>
-    <li>Offers</li>
-    <li>Contact</li>
-  </ul>
-  <h1>Copyright &copy; WebProject All Right Reserved</h1>
-</section>
+      <section id="footer">
+        <ul class="footer-link">
+          <li>Home</li>
+          <li>Tours</li>
+          <li>About US</li>
+          <li>Offers</li>
+          <li>Contact</li>
+        </ul>
+        <h1>Copyright &copy; WebProject All Right Reserved</h1>
+      </section>
       <!-- end of footer -->
-    
-    <link rel="stylesheet" href="./app.js" />
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>
