@@ -642,4 +642,10 @@ html {
   .footer-link {
     width: 40rem;
   }
+  .nav-container {
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+    left: 0;
+  }
 }
